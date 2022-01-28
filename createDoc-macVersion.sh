@@ -8,6 +8,7 @@ then
   echo "Usage: ./createDoc.sh \"Your commit message (inside quotes)\"";
 else
   (
+    git pull &&
     rm -rf portal/doc.json &&
     cp doc.json portal/ &&
     cd portal &&
